@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCare Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/ADMIN-dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="logo-2.png" alt="SwiftCare Logo" />
+        </div>
+
+        <nav>
+          <ul>
+            <li class="active">
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="has-submenu">
+              <a href="#" class="menu-toggle">
+                <div>
+                  <i class="fa-solid fa-bed"></i>
+                  <span>Patients</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </a>
+
+              <ul class="submenu">
+                <li>
+                  <a href="patient-registration.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Register Patient
+                  </a>
+                </li>
+
+                <li>
+                  <a href="patients.html">
+                    <i class="fa-solid fa-users"></i>
+                    All Patients
+                  </a>
+                </li>
+
+                <li>
+                  <a href="appointments.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Appointments
+                  </a>
+                </li>
+
+                <li>
+                  <a href="admitted-patients.html">
+                    <i class="fa-solid fa-bed-pulse"></i>
+                    Admitted Patients
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-user-doctor"></i>
+                Doctors
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-user-nurse"></i>
+                Nurses
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-user"></i>
+                Receptionists
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                Cashiers
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Billing</span>
+
+                <i class="fa-solid fa-chevron-right arrow"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="sign-off" href="#" style="color: #cf1313">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="top-actions">
+            <div class="first-layer">
+              <a href=""><i class="fa-solid fa-bars"></i></a>
+              <h1>Dashboard</h1>
+            </div>
+            <div class="notification">
+              <i class="fa-regular fa-bell"></i>
+              <span class="bell-icon">3</span>
+            </div>
+          </div>
+
+          <div class="profile">
+            <img src="/image/icon-preview.png" alt="Admin" />
+
+            <div class="admin-tag">
+              <h4>Admin</h4>
+              <small>Super Administrator</small>
+            </div>
+
+            <i class="fa-solid fa-chevron-down profile-arrow"></i>
+
+            <div class="profile-dropdown">
+              <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+
+              <a href="#"><i class="fa-solid fa-gear"></i> Account Settings</a>
+
+              <a href="#"
+                ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+              >
+            </div>
+          </div>
+        </header>
+
+        <section class="page-title">
+          <div>
+            <h1>Welcome back, Admin.</h1>
+            <p>Here's What's happening in the Hospital Today.</p>
+          </div>
+
+          <div class="date-widget">
+            <i class="fa-regular fa-calendar-days"></i>
+
+            <span id="currentDate"></span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </section>
+
+        <section class="stats-grid">
+          <div class="card stat-card"></div>
+
+          <div class="card stat-card"></div>
+
+          <div class="card stat-card"></div>
+
+          <div class="card stat-card"></div>
+        </section>
+
+        <section class="middle-grid">
+          <div class="quick-access card">
+            <h2>Quick Access</h2>
+
+            <div class="quick-grid">
+              <div class="quick-card"></div>
+
+              <div class="quick-card"></div>
+
+              <div class="quick-card"></div>
+
+              <div class="quick-card"></div>
+
+              <div class="quick-card"></div>
+
+              <div class="quick-card"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="appointments-card">
+          <div class="activities card">
+            <h2>Recent Activities</h2>
+
+            <div class="activity-list">
+              <div class="activity-item"></div>
+
+              <div class="activity-item"></div>
+
+              <div class="activity-item"></div>
+
+              <div class="activity-item"></div>
+            </div>
+          </div>
+
+          <div class="section-header">
+            <div class="section-title">
+              <h2>Today's Appointments</h2>
+
+              <a>View All</a>
+            </div>
+            <div class="section-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Patient</th>
+
+                    <th>Doctor</th>
+
+                    <th>Department</th>
+
+                    <th>Time</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td colspan="6">Appointment Rows</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <div class="card hospital-status">
+            <h2>Hospital Status</h2>
+
+            <div class="status-content"></div>
+          </div>
+
+          <div class="card hospital-status">
+            <h2>Performance</h2>
+
+            <div class="status-content"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const profile = document.querySelector(".profile");
+
+      profile.addEventListener("click", () => {
+        profile.classList.toggle("active");
+      });
+
+      const today = new Date();
+
+      const months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      document.getElementById("currentDate").innerHTML = `${
+        months[today.getMonth()]
+      } ${today.getDate()}, ${today.getFullYear()} | ${days[today.getDay()]}`;
+
+      const patientMenu = document.querySelector(".has-submenu");
+
+      patientMenu
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          patientMenu.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

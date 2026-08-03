@@ -909,3 +909,142 @@ a {
         font-size: 18px;
     }
 }
+
+/* NEXT PATIENT MODAL */
+
+.patient-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 188px;
+    padding-bottom: 197px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.patient-modal-overlay.show {
+    display: flex;
+}
+
+.patient-modal {
+    width: 753px;
+    height: 767px;
+    flex: 0 0 767px;
+    border-radius: 35px;
+    background: #ffffff;
+    padding: 79px 20px 78px 48px;
+    overflow: hidden;
+}
+
+.patient-modal-content {
+    width: 685px;
+    height: 626px;
+    padding: 23px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.patient-success-icon {
+    width: 119px;
+    height: 119px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.patient-modal-title {
+    width: 392px;
+    height: 48px;
+    margin: 0;
+    color: #31a768;
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.selected-patient-card {
+    width: 685px;
+    height: 267px;
+    padding: 20px 33px;
+    border-radius: 15px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    flex-shrink: 0;
+}
+
+.selected-patient-photo {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.selected-patient-details {
+    width: 367px;
+    height: 227px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.selected-patient-details h3 {
+    width: 367px;
+    height: 43px;
+    margin: 0;
+    color: #000000;
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.patient-basic-info,
+.patient-medical-info {
+    width: 245px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    color: #4e4e4e;
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 590;
+    line-height: 178%;
+}
+
+.patient-medical-info {
+    margin-top: -2px;
+}
+
+.next-patient-button {
+    width: 207px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    border-radius: 15px;
+    background: #10a245;
+    color: #ffffff;
+    font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.next-patient-button:hover {
+    background: #0d8e3d;
+}

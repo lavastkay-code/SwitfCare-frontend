@@ -255,3 +255,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+// Next Patient Modal
+const patientModalOverlay = document.getElementById("patientModalOverlay");
+const startTriageButton = document.querySelector(".start-button.primary");
+
+if (patientModalOverlay && startTriageButton) {
+    startTriageButton.addEventListener("click", () => {
+        patientModalOverlay.classList.add("show");
+    });
+}
+
+const nextPatientButton = document.getElementById("nextPatientButton");
+
+
+
+if (nextPatientButton) {
+    nextPatientButton.addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+}
